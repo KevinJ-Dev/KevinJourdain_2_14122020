@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header class="header">
         <header>
             <img src="img/logo/Reservia.svg" alt="Reservia logo">
             <nav>
@@ -22,9 +22,22 @@
     </header>
 
     <!-- Main -->
-    <main>
+    <main class="main">
         <!-- Section search-->
+        <section class="section_search">
+            <h1 class="title_search">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p class="subtitle_search">En plein centre ville ou en pleine nature</p>
+        </section>
         <!-- Form search -->
+        <form class="form_search" action="traitement.php" method="POST">
+            <span class="ping_icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <input class="input_search" type="search" placeholder="Marseille, France">
+            <button class="btn_search">
+                <span class="text_search">Rechercher</span>
+            </button>
+        </form>
         <!-- Filter -->
         <!-- Info result -->
         <!-- Section hosting -->

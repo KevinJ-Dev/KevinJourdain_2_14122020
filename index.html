@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <title>Reservia</title>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
-        <header>
-            <img src="img/logo/Reservia.svg" alt="Reservia logo">
-            <nav>
-                <a class="navlink" href="#">Hébergement</a>
-                <a class="navlink" href="#">Activités</a>
-            </nav>
-            <a class="signuplink" href="#">S'inscrire</a>
-        </header>
-    </header>
+        <img class="logo" src="img/logo/Reservia.svg" alt="Reservia logo">
+        <nav class="nav">
+          <a class="navlink" href="#" data-active="true">Hébergement</a>
+          <a class="navlink" href="#" data-active="false">Activités</a>
+        </nav>
+        <a class="signup" href="#">S'inscrire</a>
+      </header>
 
     <!-- Main -->
     <main class="main">
@@ -41,30 +40,38 @@
         <!-- Filter -->
         <div class="btn_container">
             <h2 class="title_filter">Filtres</h2>
-            <button class="btn_filter">Économique
+            <button class="btn_filter">
                 <div class="icon_filter">
-                    <i class="fas fa-money-bill-wave searchFiltersFilterWrapiconIcon"></i>
+                    <i class="fas fa-money-bill-wave icon_filter_icon icon_i"></i>
                 </div>
+                <span class="title_filter_2">Économique</span> 
             </button>
-            <button class="btn_filter">Familial
+
+            <button class="btn_filter">
                 <div class="icon_filter">
-                    <i class="fas fa-child searchFiltersFilterWrapiconIcon"></i>
+                    <i class="fas fa-child icon_filter_icon icon_i"></i>
                 </div>
+                <span class="title_filter_2">Familial</span> 
             </button>
-            <button class="btn_filter">Romantique
+
+            <button class="btn_filter">
                 <div class="icon_filter">
-                    <i class="fas fa-heart searchFiltersFilterWrapiconIcon"></i>
+                    <i class="fas fa-heart icon_filter_icon icon_i"></i>
                 </div>
+                <span class="title_filter_2">Romantique</span> 
             </button>
-            <button class="btn_filter">Animaux autorisé
-                <i class="fas fa-dog searchFiltersFilterWrapiconIcon"></i>
+
+            <button class="btn_filter">
+                <div class="icon_filter">
+                    <i class="fas fa-dog icon_filter_icon icon_i"></i>
+                </div>
+                <span class="title_filter_2">Animaux autorisé</span> 
             </button>
         </div>
         <!-- Info result -->
         <div class="info_result">
-            <div class="icon_result"><i class="fas fa-info searchResultWrapiconIcon"></i>
+            <div class="icon_result"><i class="fas fa-info icon_result_i"></i></div>
                 <p class="text_result">Plus de 500 logements son disponibles dans cette ville</p>
-            </div>
         </div>
         <!-- Section hosting -->
         <section id="section_hosting">

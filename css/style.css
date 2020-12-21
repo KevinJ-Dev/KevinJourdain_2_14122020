@@ -38,46 +38,6 @@
   font-weight: 600;
 }
 
-/* Responsive header */
-@media screen and (min-width: 601px) {
-  .header {
-    grid-template-columns: auto 1fr auto auto;
-    grid-template-areas: "logo . navbar button";
-  }
-  .navlink[data-active="true"] {
-    border-top: 3px solid #0065fc;
-  }
-  .navlink:hover {
-    border-top: 3px solid #0065fc;
-  }
-}
-@media screen and (max-width: 600px) {
-  .header {
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas: "logo . button" "navbar navbar navbar";
-  }
-  .logo {
-    order: 0;
-  }
-  .signup {
-    order: 1;
-  }
-  .nav {
-    order: 2;
-  }
-  .navlink {
-    border-top: none;
-    border-bottom: 3px solid #f2f2f2;
-    width: 50%;
-  }
-  .navlink[data-active="true"] {
-    border-bottom-color: #0065fc;
-  }
-  .navlink:hover {
-    border-bottom-color: #0065fc;
-  }
-}
-
 /* Main */
 .main {
   max-width: 1440px;
@@ -305,43 +265,6 @@ main {
 .view_more {
   font-weight: bold;
 }
-/* Responsive Section hosting*/
-@media (max-width: 1440px) {
-  .section_hosting {
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
-  }
-  .hosting_popular {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto 10rem;
-    column-gap: 2rem;
-    grid-row-start: 1;
-  }
-  .title_popular {
-    grid-column: 1/-1;
-  }
-}
-@media (min-width: 925px) {
-  .main_hosting {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 925px) and (min-width: 650px) {
-  .main_hosting {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 650px) {
-  .main_hosting {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 1000px) {
-  .hosting_popular {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto repeat(3, 9rem);
-  }
-}
 
 /* Section hosting popular */
 .hosting_popular {
@@ -396,7 +319,76 @@ main {
   flex-direction: column;
 }
 
-/* Responsive Section hosting popular */
+/* Footer */
+footer {
+  background: #f2f2f2;
+  width: 100%;
+}
+
+.container_footer {
+  display: flex;
+  width: 1440px;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.bloc {
+  width: 30%;
+  padding: 2rem 2rem;
+}
+
+.list_footer {
+  display: block;
+  margin: 1rem 0;
+}
+
+.list_bloc_footer {
+  padding-inline-start: 0;
+}
+
+/* Responsive header */
+@media screen and (min-width: 601px) {
+  .header {
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logo . navbar button";
+  }
+  .navlink[data-active="true"] {
+    border-top: 3px solid #0065fc;
+  }
+  .navlink:hover {
+    border-top: 3px solid #0065fc;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo . button" "navbar navbar navbar";
+  }
+  .logo {
+    order: 0;
+  }
+  .signup {
+    order: 1;
+  }
+  .nav {
+    order: 2;
+  }
+  .navlink {
+    border-top: none;
+    border-bottom: 3px solid #f2f2f2;
+    width: 50%;
+  }
+  .navlink[data-active="true"] {
+    border-bottom-color: #0065fc;
+  }
+  .navlink:hover {
+    border-bottom-color: #0065fc;
+  }
+}
+
+/* Responsive Section hosting*/
 @media (max-width: 1440px) {
   .section_hosting {
     grid-template-columns: 1fr;
@@ -434,33 +426,42 @@ main {
   }
 }
 
-/* Footer */
-footer {
-  background: #f2f2f2;
-  width: 100%;
+/* Responsive Section hosting popular */
+@media (max-width: 1440px) {
+  .section_hosting {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  .hosting_popular {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 10rem;
+    column-gap: 2rem;
+    grid-row-start: 1;
+  }
+  .title_popular {
+    grid-column: 1/-1;
+  }
 }
-
-.container_footer {
-  display: flex;
-  width: 1440px;
-  max-width: 100%;
-  margin: auto;
-  padding: 0 2rem;
-  box-sizing: border-box;
+@media (min-width: 925px) {
+  .main_hosting {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-
-.bloc {
-  width: 30%;
-  padding: 2rem 2rem;
+@media (max-width: 925px) and (min-width: 650px) {
+  .main_hosting {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-
-.list_footer {
-  display: block;
-  margin: 1rem 0;
+@media (max-width: 650px) {
+  .main_hosting {
+    grid-template-columns: 1fr;
+  }
 }
-
-.list_bloc_footer {
-  padding-inline-start: 0;
+@media (max-width: 1000px) {
+  .hosting_popular {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(3, 9rem);
+  }
 }
 
 /* Responsive footer */

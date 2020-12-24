@@ -355,7 +355,7 @@ main {
 }
 
 .popular_icon {
-  margin: 1rem 0 0 0;
+  margin: 2rem 0 0 0;
 }
 
 /* Section activity */
@@ -420,7 +420,7 @@ footer {
 }
 
 .list_bloc_footer {
-  padding-inline-start: 0;
+  padding-left: 0 !important;
 }
 
 /* Responsive header */

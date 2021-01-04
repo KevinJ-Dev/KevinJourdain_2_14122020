@@ -472,6 +472,7 @@ footer {
   }
   .input_search {
     flex: 1;
+    width: 10rem;
   }
   .text_search {
     display: none;

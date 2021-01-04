@@ -348,6 +348,7 @@ main {
 
 .subtitle_popular {
   margin: 1rem 0 0 0;
+  padding-right: 2rem;
 }
 
 .text_popular {
@@ -355,7 +356,7 @@ main {
 }
 
 .popular_icon {
-  margin: 2rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 /* Section activity */

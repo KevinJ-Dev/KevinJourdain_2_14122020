@@ -63,11 +63,19 @@ footer li {
   font-weight: 600;
 }
 
+/* Bloc header */
+.bloc_header {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
 /* Main */
 .main {
   max-width: 1440px;
   margin: auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
   box-sizing: border-box;
 }
 
@@ -163,7 +171,6 @@ main {
   min-height: 3.5rem;
   align-items: center;
   justify-content: center;
-  /* margin: -2px; */
   margin: -7px;
 }
 
@@ -348,7 +355,7 @@ main {
 
 .subtitle_popular {
   margin: 1rem 0 0 0;
-  padding-right: 2rem;
+  padding-right: 2.4rem;
 }
 
 .text_popular {

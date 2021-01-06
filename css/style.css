@@ -85,7 +85,12 @@ main {
 
 /* Section search */
 .title_search {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.subtitle_search {
+  margin: 0 0 0 0;
 }
 
 /* Form search*/
@@ -93,7 +98,7 @@ main {
   display: inline-flex;
   max-width: 100%;
   overflow: auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .ping_icon {
@@ -122,10 +127,11 @@ main {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   border: none;
-  border-radius: 0 1rem 1rem 0;
+  border-radius: 1rem 1rem 1rem 1rem;
   padding: 0 1.5rem;
   font-size: 1rem;
   cursor: pointer;
+  /* border-radius: 1rem; */
 }
 
 /* Filter */
@@ -139,6 +145,7 @@ main {
   margin: 0 2rem 1rem 0;
   display: flex;
   align-items: center;
+  font-size: 1.5rem;
 }
 
 .btn_filter {
@@ -151,10 +158,7 @@ main {
   cursor: pointer;
   transition: 0.5s;
   font-weight: bold;
-}
-
-.btn_filter:last-child {
-  margin: 0;
+  margin-bottom: 1rem;
 }
 
 .btn_filter:hover {
@@ -494,6 +498,18 @@ footer {
   }
   .form_icon {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .title_filter {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .btn_search {
+    border-radius: 0 1rem 1rem 0;
   }
 }
 

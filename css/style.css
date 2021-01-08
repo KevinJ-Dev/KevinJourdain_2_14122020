@@ -11,12 +11,11 @@ h1 {
 
 a {
   background-color: transparent;
-  color: inherit;
+  color: #000;
   text-decoration: none;
 }
 
 button {
-  font-family: inherit;
   font-size: 100%;
 }
 
@@ -108,9 +107,13 @@ main {
   padding: 0 1.5rem;
   box-sizing: border-box;
   width: 14rem;
+  font-family: "Raleway", sans-serif;
+}
+
+::placeholder {
+  color: #000;
   font-size: 1rem;
   font-weight: bold;
-  font-family: "Raleway", sans-serif;
 }
 
 .btn_search {
@@ -123,7 +126,6 @@ main {
   padding: 0 1.5rem;
   font-size: 1rem;
   cursor: pointer;
-  /* border-radius: 1rem; */
 }
 
 /* Filter */
@@ -151,6 +153,7 @@ main {
   transition: 0.5s;
   font-weight: bold;
   margin-bottom: 1rem;
+  padding: 0.3rem;
 }
 
 .btn_filter:hover {
@@ -186,7 +189,7 @@ main {
 .info_result {
   display: flex;
   align-items: center;
-  margin: 1rem 0 2rem 0;
+  margin: 2rem 0 2rem 0;
 }
 
 .icon_result {
@@ -433,7 +436,7 @@ footer {
     grid-template-columns: auto 1fr auto auto;
     grid-template-areas: "logo . navbar button";
   }
-  .navlink[data-active="true"] {
+  .navlink[active="true"] {
     border-top: 3px solid #0065fc;
   }
   .navlink:hover {
@@ -459,7 +462,7 @@ footer {
     border-bottom: 3px solid #f2f2f2;
     width: 50%;
   }
-  .navlink[data-active="true"] {
+  .navlink[active="true"] {
     border-bottom-color: #0065fc;
   }
   .navlink:hover {
@@ -547,6 +550,9 @@ footer {
   }
   .main_hosting_0 {
     font-size: 0.9rem;
+  }
+  .btn_filter {
+    margin: 0.1rem;
   }
 }
 

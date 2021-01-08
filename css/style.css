@@ -5,7 +5,6 @@ body {
 }
 
 h1 {
-  font-size: 2em;
   font-weight: bold;
 }
 
@@ -77,7 +76,6 @@ main {
 /* Section search */
 .title_search {
   margin-bottom: 1rem;
-  font-size: 1.5rem;
 }
 
 .subtitle_search {
@@ -154,6 +152,7 @@ main {
   font-weight: bold;
   margin-bottom: 1rem;
   padding: 0.3rem;
+  font-family: "Raleway", sans-serif;
 }
 
 .btn_filter:hover {
@@ -179,6 +178,8 @@ main {
 
 .title_filter_2 {
   margin: 0 1rem;
+  /* font-family: "Raleway", sans-serif;
+  font-weight: bold; */
 }
 
 .icon_i {
@@ -436,7 +437,7 @@ footer {
     grid-template-columns: auto 1fr auto auto;
     grid-template-areas: "logo . navbar button";
   }
-  .navlink[active="true"] {
+  .navlink[data-active="true"] {
     border-top: 3px solid #0065fc;
   }
   .navlink:hover {
@@ -462,7 +463,7 @@ footer {
     border-bottom: 3px solid #f2f2f2;
     width: 50%;
   }
-  .navlink[active="true"] {
+  .navlink[data-active="true"] {
     border-bottom-color: #0065fc;
   }
   .navlink:hover {
@@ -594,6 +595,21 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .hosting_popular {
+    margin: 0 -1rem;
+    background-color: #f2f2f2;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .main_hosting {
+    padding: 0;
+  }
+}
+
 @media (max-width: 1000px) {
   .hosting_popular {
     grid-template-columns: 1fr;

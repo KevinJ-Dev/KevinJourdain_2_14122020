@@ -20,5 +20,13 @@ Comme je ne savais pas de quels tailles et formats d’image tu avais besoin, j�
 Les icônes proviennent de la bibliothèque **Font Awesome**. Les couleurs de la charte sont le bleu **#0065FC**, et sa version plus claire **#DEEBFF** ainsi que le gris pour le fond **#F2F2F2**.
 La police du site est **Raleway**.
 
+N’utilise pas de framework ou pré-compilateur CSS pour ce projet (comme SASS par exemple) : comme tu démarres, je préfère que tu montes en compétences sur HTML et CSS et que tu apprennes à coder from scratch. On aimerait tester tes compétences là-dessus !
+Je te recommande d'utiliser Visual Studio Code, plusieurs plugins pourront te simplifier la vie, par exemple Live Server ou Prettier.
+Tu peux intégrer les icônes Font Awesome en HTML ou CSS. Je te conseille fortement d’utiliser Flexbox mais tu peux aussi utiliser CSS Grid si tu veux.
+Ton code devra utiliser les balises sémantiques et ne doit contenir aucune erreur ni alerte au validateur W3C HTML et CSS.
+Le site devra être compatible avec les dernières versions de Chrome et Firefox.
+Pense à séparer le HTML et le CSS et à organiser ton dossier de rendu.
+N’oublie pas de versionner ton code avec Git, et ce dès les premières lignes de code. C’est hyper important quand on travaille en équipe. Nous on utilise GitKraken comme client Git, c'est plus sympa qu'une console, mais tu fais comme tu veux. Ensuite il faut que tu déploies la page sur GitHub Pages ou GitLab Pages comme tu préfères.
+
 ![Desktop - 1](https://user-images.githubusercontent.com/32522780/104310371-e4e55700-54d3-11eb-8e5a-e780b66a531d.png)
 ![iPhone 8 - 1](https://user-images.githubusercontent.com/32522780/104310498-1c540380-54d4-11eb-8613-7b8ff5669eda.png)
